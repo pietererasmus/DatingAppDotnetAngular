@@ -1,0 +1,9 @@
+To run the server:
+dotnet watch --no-hot-reload
+
+After making a change to the entities, we need to create a new migration:
+dotnet ef migration add "Name of what was changed"
+now run the migration
+dotnet ef database update
+
+DTO -> Making use of JSON
